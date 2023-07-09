@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
+    <link rel="stylesheet" href="../decoder/css/style.css" />
+    <title>Romaji Converter</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo" style="margin-left: 1rem"> BingTools </a>
+        <ul>
+          <li class="nav__link">
+            <a href="/tools" class="nav__link" style="margin-left: 1rem">
+              <i class="bx bx-code-alt"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <br /><br />
+    <div class="app">
+      <div class="background">
+        <div class="blur">
+          <h1 style="color: white; text-align: center">Romaji Converter</h1>
+          <br />
+          <div class="bt">
+            <button
+              id="hiragana"
+              class="active baut"
+              onclick="hiraganaChange()"
+            >
+              Hiragana
+            </button>
+            <button id="katakana" class="baut" onclick="katakanaChange()">
+              Katakana
+            </button>
+          </div>
+          <main>
+            <div class="box-container">
+              <article class="box" id="boxHiragana" spellcheck="false">
+                <p class="ter">Input text</p>
+                <textarea
+                  name="converter"
+                  id="converterToHi"
+                  cols="30"
+                  rows="8"
+                  placeholder="Kawai"
+                ></textarea>
+              </article>
+
+              <article class="box hidden" id="boxKatakana" spellcheck="false">
+                <p class="ter">Input :</p>
+                <textarea
+                  name="converter"
+                  id="converterToKa"
+                  cols="30"
+                  rows="8"
+                  placeholder="Contoh : Kawai"
+                ></textarea>
+              </article>
+
+              <article class="box">
+                <p class="ter">Result :</p>
+                <textarea
+                  name="result"
+                  id="result"
+                  cols="30"
+                  rows="8"
+                ></textarea>
+              </article>
+            </div>
+          </main>
+        </div>
+        <div id="footer">&copy; 2023 - 2024 Bing Tools</div>
+      </div>
+    </div>
+
+    <script>
+      const hiraganaChange = function () {
+        katakana.classList.remove("active");
+        hiragana.classList.add("active");
+
+        boxHiragana.classList.remove("hidden");
+        boxKatakana.classList.add("hidden");
+
+        converterToHi.value = "";
+        converterToKa.value = "";
+        result.value = "";
+      };
+
+      const katakanaChange = function () {
+        hiragana.classList.remove("active");
+        katakana.classList.add("active");
+
+        boxHiragana.classList.add("hidden");
+        boxKatakana.classList.remove("hidden");
+
+        converterToHi.value = "";
+        converterToKa.value = "";
+        result.value = "";
+      };
+    </script>
+
+    <script src="../assets/js/katakana.js"></script>
+    <script src="../assets/js/hiragana.js"></script>
+  </body>
+</html>
