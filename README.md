@@ -6,6 +6,10 @@ You can test the app [here!](https://easy-quizizz.vercel.app/)
 https://quizizz.com/join/game/U2FsdGVkX1%252Bp4MkbK8rlF9Lxa1utKCga4D40LOqh%252BysKazUuGP7Geh9Mp%252Fk%252BHVzI?gameType=live
 
 
+https://quizizz.com/join/game/U2FsdGVkX1%252FCAD9Qj%252FmnDNHzrwCzmAYT0gk%252FDVYW2E5pgAkWkUs6%252FHpHUPgJJ2Nx?gameType=solo
+
+
+https://quizizz.com/join/quiz/d89f348cd25a6ce96ed8a9c0bb36d98fb0f88bea448a67c1485259d7755eca44/start?studentShare=true
 
 ### Disclaimer
 Since Quizizz released new update app doesn't work
