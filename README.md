@@ -3,6 +3,10 @@ Quizizz answers web app, written in Next.js
 
 You can test the app [here!](https://easy-quizizz.vercel.app/)
 
+https://quizizz.com/join/game/U2FsdGVkX1%252Bp4MkbK8rlF9Lxa1utKCga4D40LOqh%252BysKazUuGP7Geh9Mp%252Fk%252BHVzI?gameType=live
+
+
+
 ### Disclaimer
 Since Quizizz released new update app doesn't work
 
